@@ -60,9 +60,16 @@ def giftExchange(person1, person2):
     
     print(f"{person1.name} Recieved {person2.giftName}!")
 
-person1 = giftExchanger("Mateus", "Candle")
-person2 = giftExchanger("Henry", "Coffee Mug")
-
-giftExchange(person1, person2)
-print(secretSantaList)
+def secretSantaExchange(SantasList):
+    # santaList is a dict and we want to map each gifter with a gift and vice versa (must not give the same gifts if ran again)
+    for i in range(len(SantasList.items())):
+        print(SantasList.items[0] + " " + SantasList.items[1][0])
         
+
+# person1 = giftExchanger("Mateus", "Candle")
+# person2 = giftExchanger("Henry", "Coffee Mug")
+
+# giftExchange(person1, person2)
+# print(secretSantaList)
+        
+secretSantaExchange(secretSantaList)
